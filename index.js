@@ -1,0 +1,15 @@
+console.log('something')
+window.addEventListener("scroll",function(){
+    nav=document.querySelector("nav")
+    ash=this.document.querySelector(".ash")
+    logo=this.document.querySelector("#logo")
+    console.log(ash)
+    console.log(window.scrollY>nav.clientHeight)
+    if(window.scrollY>nav.clientHeight){
+        ash.classList.add("anime");
+        logo.classList.add("zoom")
+    }else{
+        ash.classList.remove("anime");
+        logo.classList.remove("zoom")
+    }
+});

@@ -1,78 +1,89 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    background-color: black;
     color: white;
     font-family: 'VT323', monospace;
-    font-size: 24px;
     /* font-family: 'Courier New', Courier, monospace; */
    }
+body{
+    background-color: black;
+    animation: flicker 700ms linear;
+    /* background-image: url(./images/myphoto.png); */
+}
+#logo{
+    font-size: 2.5rem;
+    background-color: #bd71c9;
+    border-radius: 10px;
+}
+.ash{
+    /* display: none; */
+    display: inline-block;
+    transform: translateY(-100px);
+    font-size: 2.5rem;
+    transition: 300ms;
+    margin-bottom: 0px;
+}
+.anime{
+    
+    transform: translateY(0px);
+    
+}
+/* .zoom{
+    transform: scale(2);
+} */
 
 nav{
-position: fixed;
+
 width: 100%;
-padding: 1em 3em;
-display: flex;
-justify-content: space-between;
-align-items: center;
-/* border-bottom: dashed white 1px; */
-z-index: 1000;
-background-color: transparent;
-}
-#nav-links{
-list-style: none;
-display: flex;
-gap: 1em;
-padding: 1em;
+/* background-color: black; */
+
 
 }
-.links{
+
+#links{
     transition: color 100ms cubic-bezier(0.075, 0.82, 0.165, 1);    
+    color: white;
+    text-decoration: underline;
+    font-size: 1.8em;
 }
-.links:hover{
-color:#bd71c9 ;
+#links:hover{
+color:#bd71c9;
+
+}
+
+
+#name{
+font-size: 72px;
+font-family: 'Rubik Moonrocks', cursive;
+font-weight: 900;
+}
+
+
+.main p{
+    font-size:1.5em;
+    line-height: 1;
+}
+#catch{
+    font-size: 1.8em;
+    color: #bd71c9;
+}
+
+.role{
+    color: rgb(143, 143, 143);
+
+}
+#portrait{
+    width: 100%;
 }
 
 .main{
     height: 100vh;
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 70%;
-    margin: 0 auto;
-}
-#name{
-font-size: 72px;
-font-family: 'Rubik Moonrocks', cursive;
-}
-
-.main>*{
-    flex: 2;
-}
-.main,h1{
-    /* font-weight: 900; */
-}
-#catch{
-    color: #bd71c9;
-}
-/* .catch,span{
-    color: ;
-} */
-.role{
-    color: rgb(143, 143, 143);
-    padding: 1em 0em;
-}
-#portrait{
-    height: 50vh;
 }
 
 @media(max-width:910px){
 
     .main{
         top: 114px;
-        padding: 3em 1em;
         flex-direction: column;
         width: auto;
         position: relative;
@@ -84,3 +95,70 @@ font-family: 'Rubik Moonrocks', cursive;
     }
 
 }
+
+
+@keyframes flicker {
+    0% {
+      opacity: 0.27861;
+    }
+    5% {
+      opacity: 0.34769;
+    }
+    10% {
+      opacity: 0.23604;
+    }
+    15% {
+      opacity: 0.90626;
+    }
+    20% {
+      opacity: 0.18128;
+    }
+    25% {
+      opacity: 0.83891;
+    }
+    30% {
+      opacity: 0.65583;
+    }
+    35% {
+      opacity: 0.67807;
+    }
+    40% {
+      opacity: 0.84693;
+    }
+    45% {
+      opacity: 0.96019;
+    }
+    50% {
+      opacity: 0.08594;
+    }
+    55% {
+      opacity: 0.20313;
+    }
+    60% {
+      opacity: 0.71988;
+    }
+    65% {
+      opacity: 0.53455;
+    }
+    70% {
+      opacity: 0.37288;
+    }
+    75% {
+      opacity: 0.71428;
+    }
+    80% {
+      opacity: 0.70419;
+    }
+    85% {
+      opacity: 0.7003;
+    }
+    90% {
+      opacity: 0.36108;
+    }
+    95% {
+      opacity: 0.24387;
+    }
+    100% {
+      opacity: 0.27861;
+    }
+  }
