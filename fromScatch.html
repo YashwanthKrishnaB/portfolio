@@ -15,31 +15,31 @@
     <link rel="stylesheet" href="./stylesheet.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-md navbar-dark px-5 fixed-top" id="mainNav">
+    <nav class="navbar navbar-expand-md navbar-dark px-md-5 px-0 fixed-top" id="mainNav">
                 <a href="" class="navbar-brand p-3">
                     <!-- <div id="logo">Y<p class="ash">ash</p></div> -->
                     <img src="./images/Logo.png" alt="">
                 </a>
-                <button class="navbar-toggler"  data-toggle="collapse" data-target="#navLinks" aria-label="toggle-navbar">
+                <button class="navbar-toggler  mx-3"  data-toggle="collapse" data-target="#navLinks" aria-label="toggle-navbar">
                   <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse " id="navLinks">
                   <ul class="navbar-nav ml-auto">
                     <li class="nav-item"><a class="nav-link" id="links" href="#work">My-Work</a> </li>
-                    <li class="nav-item"><a class="nav-link" id="links" href="#resume">Resume</a> </li>
+                    <li class="nav-item"><a class="nav-link" id="links" href="./Resume.pdf">Resume</a> </li>
                   </ul>
         </div>
     </nav>
-    <section class="main d-flex align-items-center justify-content-center">
+    <section class="main d-flex align-items-center justify-content-center mb-5">
         <div class="row d-flex justify-content-center">
             <div class="col-md-6">
                 <p class="mb-0">Hi, my name is</p>
                 <h1 id="name">Yashwanth Krishna.</h1>
                 <h1 id="catch">I am your go to <span>Tech</span> Guy</h1>
-                <p class="role" >I'm a Software Engineer/Data Scientist and an occasional Designer(Like this portfolio).</p>
+                <p class="role d-none d-lg-block" >I'm a Software Engineer/Data Scientist and an occasional Designer(Like this portfolio).</p>
             </div>
             <div class="col-md-4">
-                <img class="w-100" src="./images/photo.svg" alt="">    
+                <img class="w-100" src="./images/blob.svg" alt="">    
             </div>
         </div>
     </section>
@@ -51,13 +51,6 @@
         <div class="col-lg-4">
         <p><i>Name: </i>Yashwanth Krishna</p>
         <p><i>Bachelors in Electronics and Communication</i></p>
-        <p>I am currently studying Bachelors in Electronic
-            Communication. I joined the course to gain knowledge
-            around projects I am willing to do in future.! myself a
-            person who believes in science fiction and living to
-            make them real, So i started to look on Engineering and
-            <i> Electronics and Communication</i> was my best choice of interest.</p>
-        <p>Languages I Know:</p>
         <ul>
             <li>Java</li>
             <li>Python</li>
@@ -75,6 +68,15 @@
         </ul>
         </div>
       </div>
+    </section>
+    <section id="work" class="works d-flex justify-content-center align-items-center">
+        <h3>My Works</h1>
+        <div class="projects d-flex align-items-center">
+            <li><a href="https://chennaindt.in/">Chennai NDT</a></li>
+            <li>LoRa Based Weather Station</li>
+            <li>Wireless Smart Switch System</li>
+            <li>Smart Agriculture IOT System</li>
+        </div>
     </section>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>

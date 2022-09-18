@@ -1,13 +1,18 @@
 * {
     margin: 0;
     padding: 0;
-    color: white;
+    /* color: white; */
     font-family: 'VT323', monospace;
+    letter-spacing: 1px;
     /* font-family: 'Courier New', Courier, monospace; */
    }
+
+html {
+    scroll-behavior: smooth;
+}
 body{
-    background-color: black;
-    animation: flicker 700ms linear;
+    background-color: #afacac;
+    /* animation: flicker 700ms linear; */
     /* background-image: url(./images/myphoto.png); */
 }
 #logo{
@@ -96,69 +101,37 @@ font-weight: 900;
 
 }
 
+.works{
+  flex-direction: column;
+  height: auto;
+}
+.works h3{
+  font-size: 42px;
+font-family: 'Rubik Moonrocks', cursive;
+font-weight: 900;
+}
+.projects{
+  width: 100%;
+  flex-direction: column;
+}
+.projects li{
+  color: black;
+  font-size: 1.8em;
+  width: 80%;
+  text-align: center;
+  list-style: none;
+  background-image: linear-gradient(to right top, #525b69, #3c4e55, #2d3f3f, #25302a, #1e2119);
+  border-radius: 20px;
+  margin: 0.5em;
+}
 
-@keyframes flicker {
-    0% {
-      opacity: 0.27861;
-    }
-    5% {
-      opacity: 0.34769;
-    }
-    10% {
-      opacity: 0.23604;
-    }
-    15% {
-      opacity: 0.90626;
-    }
-    20% {
-      opacity: 0.18128;
-    }
-    25% {
-      opacity: 0.83891;
-    }
-    30% {
-      opacity: 0.65583;
-    }
-    35% {
-      opacity: 0.67807;
-    }
-    40% {
-      opacity: 0.84693;
-    }
-    45% {
-      opacity: 0.96019;
-    }
-    50% {
-      opacity: 0.08594;
-    }
-    55% {
-      opacity: 0.20313;
-    }
-    60% {
-      opacity: 0.71988;
-    }
-    65% {
-      opacity: 0.53455;
-    }
-    70% {
-      opacity: 0.37288;
-    }
-    75% {
-      opacity: 0.71428;
-    }
-    80% {
-      opacity: 0.70419;
-    }
-    85% {
-      opacity: 0.7003;
-    }
-    90% {
-      opacity: 0.36108;
-    }
-    95% {
-      opacity: 0.24387;
-    }
-    100% {
-      opacity: 0.27861;
-    }
-  }
+.projects li a{
+  color: inherit;
+}
+
+.projects li:hover{
+  background-image: linear-gradient(to right top, #214174, #1b4789, #144c9e, #1051b2, #1555c7);
+}
+section{
+  height: 100vh;
+}
