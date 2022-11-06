@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    /* color: white; */
+    color: white;
     font-family: 'VT323', monospace;
     letter-spacing: 1px;
     /* font-family: 'Courier New', Courier, monospace; */
@@ -11,7 +11,7 @@ html {
     scroll-behavior: smooth;
 }
 body{
-    background-color: #afacac;
+    background-color: #000000;
     /* animation: flicker 700ms linear; */
     /* background-image: url(./images/myphoto.png); */
 }
