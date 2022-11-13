@@ -114,7 +114,8 @@ font-family: 'Poppins';
 @media(max-width:770px){
 
     .main{
-        margin-top: 114px;
+        /* margin-top: 114px; */
+        height: 100vh;
         flex-direction: column;
         width: auto;
         /* position: relative; */
@@ -127,6 +128,9 @@ font-family: 'Poppins';
     
     .navbar-collapse{
         background-color: rgba(0, 0, 0, 0.747);
+    }
+    #aboutMe{
+    margin-bottom: 5rem;
     }
 
 }
