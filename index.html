@@ -121,7 +121,7 @@
     
     <div id="contact-us" class="container col-md-6 border text-light p-md-5 m-5 mx-auto">
         <h1 class="pop text-light mb-5 ">Contact Me</h1>
-        <form action="https://formsubmit.co/yashwanthtron@gmail.com" method="post">
+        <form action="https://formsubmit.co/yashwanthtron@gmail.com" method="POST">
                 <div class="row mb-3">
                     <div class="col-md-6 mb-3">
                       <input type="text" name="name" class="form-control" placeholder="name" aria-label="name">
@@ -134,6 +134,8 @@
                 <textarea name="message" class="form-control" id="message" rows="3" placeholder="Type your Message Here."></textarea>
               </div>
               <button type="submit" class="mb-3 bttn display-5 border text-light px-4 py-2 rale-bold">Send</button>
+              <input type="hidden" name="_next" value="https://yashh-dev.netlify.app/thanks.html">
+              <input type="hidden" name="_captcha" value="false">
         </form>
     </div>
    
