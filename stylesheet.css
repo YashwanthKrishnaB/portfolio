@@ -204,3 +204,8 @@ form button{
 form button:hover{
     background-color: var(--accent_opacity);
 }
+
+.hov:hover{
+    text-decoration: none;
+    background-color: var(--accent_opacity);
+}
