@@ -82,7 +82,7 @@ color:var(--accent);
 
 
 #name{
-/* font-size: 72px; */
+font-size: 72px;
 font-family: 'Poppins';
 /* font-weight: 900; */
 }
@@ -125,7 +125,9 @@ font-family: 'Poppins';
     #name{
         font-size: 42px;
     }
-    
+    #catch{
+        font-size: 24px ;
+    }
     .navbar-collapse{
         background-color: rgba(0, 0, 0, 0.747);
     }
@@ -193,5 +195,12 @@ font-family: 'Poppins';
     text-decoration: none;
 }
 .card-body a:hover{
+    background-color: var(--accent_opacity);
+}
+form button{
+    background-color: transparent;
+}
+
+form button:hover{
     background-color: var(--accent_opacity);
 }
