@@ -62,6 +62,43 @@ body{
     transform: scale(2);
 } */
 
+
+.sideBar{
+    position: fixed;
+    left: 14px;
+    bottom: 0px;
+    color: #1f8d7b;
+    
+}
+.sideLinks{
+    margin-bottom: 0px;
+    font-size: 18px;
+    list-style: none;
+}
+
+.sideLinks>li{
+    padding: 10px;
+}
+.sideLinks>li>a{
+    color: var(--accent);
+}
+
+@media(max-width:750px){
+    .sideBar{
+        display: none;
+    }
+}
+.sideLinks::after{
+    content: "";
+    display: block;
+    height: 80px;
+    width: 1px;
+    background-color: var(--accent);
+    margin: 0px auto;
+    margin-top: 20px;
+    box-sizing: border-box;
+}
+
 nav{
 
 width: 100%;
