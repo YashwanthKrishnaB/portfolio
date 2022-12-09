@@ -7,9 +7,9 @@
     /* font-family: 'Courier New', Courier, monospace; */
    }
 :root{
-    --accent:#1f8d7b;
-    --accent_opacity:#00a68a77;
-    --secondary:#fff
+    --accent:rgb(211, 99, 226);
+    --accent_opacity:rgb(211, 99, 226,0.3);
+    --secondary:#fff;
 }
 @font-face {
     font-family:'Supreme';
@@ -32,6 +32,28 @@
 /* poppins,supreme
 google sans ,nexa ,avanir-next,averta cy,raleway,league spartan,caluna
 */
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+    
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: transparent; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #495670;
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--secondary); 
+  }
 
 html {
     scroll-behavior: smooth;
@@ -63,13 +85,16 @@ body{
     transform: scale(2);
 } */
 
+@media(max-width:750px) {
+    #gitStatus{
+        display: none;
+    }
+}
 
 .sideBar{
     position: fixed;
-    left: 14px;
-    bottom: 0px;
-    color: #1f8d7b;
-    
+    left: 1em;
+    bottom: 0px;   
 }
 .sideLinks{
     margin-bottom: 0px;
@@ -89,13 +114,42 @@ body{
     color: var(--accent);
     transform: translateY(-5px);
 }
-#ic:hover{
-    
-    /* display: none; */
+
+.mailBar{
+    display: inline-block;
+    position: fixed;
+    right: 30px;
+    bottom: 0px;
+    writing-mode: vertical-rl;
+}
+
+.mailBar>a{
+    font-size: 12px;
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    transition: 200ms ease-in-out;
+}
+.mailBar>a:hover{
+    color: var(--accent);
+    transform: translateY(-5px);
+}
+.mailBar::after{
+    content: "";
+    display: inline-block;
+    height: 80px;
+    width: 1px;
+    background-color: var(--secondary);
+    margin: 0px auto;
+    margin-top: 20px;
+    box-sizing: border-box;
 }
 
 @media(max-width:750px){
     .sideBar{
+        display: none;
+    }
+    .mailBar{
         display: none;
     }
 }
@@ -230,16 +284,22 @@ font-family: 'Poppins';
 
 
 .card{
-    background-color: transparent;
-    border: 1px var(--accent) solid;
-    /* border-radius: 3px; */
+    background-color: #112240;
+    height: 375px;
+    font-family: 'Roboto';
+    font-weight: bold;
 }
 
-.card-title{
-    font-family: 'raleway';
-    font-weight: 700;
+
+.card-text{
+    font-family: 'Roboto';
+    font-size: 14px;
+    color: #8294b9;
+    margin-bottom: 30px;
 }
 .card-body a{
+    position: absolute;
+    bottom: 14px;
     text-decoration: none;
 }
 .card-body a:hover{
