@@ -9,6 +9,7 @@
 :root{
     --accent:#1f8d7b;
     --accent_opacity:#00a68a77;
+    --secondary:#fff
 }
 @font-face {
     font-family:'Supreme';
@@ -80,7 +81,17 @@ body{
     padding: 10px;
 }
 .sideLinks>li>a{
+    color: var(--secondary);
+    display: inline-block;
+    transition: 200ms ease-in-out;
+}
+.sideLinks>li>a:hover{
     color: var(--accent);
+    transform: translateY(-5px);
+}
+#ic:hover{
+    
+    /* display: none; */
 }
 
 @media(max-width:750px){
@@ -93,7 +104,7 @@ body{
     display: block;
     height: 80px;
     width: 1px;
-    background-color: var(--accent);
+    background-color: var(--secondary);
     margin: 0px auto;
     margin-top: 20px;
     box-sizing: border-box;
