@@ -317,3 +317,21 @@ form button:hover{
     text-decoration: none;
     background-color: var(--accent_opacity);
 }
+.footer-links{
+    color: white;
+}
+
+.footer-links>li{
+    display: inline-block;
+    padding: 0px 1em;
+}
+
+.footer-links>li>a{
+    color: var(--secondary);
+    display: inline-block;
+    transition: 200ms ease-in-out;
+}
+.footer-links>li>a:hover{
+    color: var(--accent);
+    transform: translateY(-5px);
+}
