@@ -14,165 +14,190 @@
     <link rel="stylesheet" href="./stylesheet.css">
 </head>
 <body>
-    <div class="sideBar">
-        <ul class="sideLinks">
-            <li><a id="ic" href="https://github.com/yashh-dev"><i class="bi bi-github"></i></a></li>
-            <li><a href="https://www.linkedin.com/in/yashwanthkrishnab/"><i class="bi bi-linkedin"></i></a></li>
-            <!-- <li><a href="https://codepen.io/yash-official"><svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-codepen"><title>CodePen</title><polygon points="12 2 22 8.5 22 15.5 12 22 2 15.5 2 8.5 12 2"></polygon><line x1="12" y1="22" x2="12" y2="15.5"></line><polyline points="22 8.5 12 15.5 2 8.5"></polyline><polyline points="2 15.5 12 8.5 22 15.5"></polyline><line x1="12" y1="2" x2="12" y2="8.5"></line></svg></a></li> -->
-            <li><a href="https://www.instagram.com/noodlecodes/"><i class="bi bi-instagram"></i></a></li>
-            <li><a href="https://twitter.com/noodleCodes"><i class="bi bi-twitter"></i></a></li>
-        </ul>    
+    <div class="progress-loader">
+        <div class="progress"></div>
     </div>
-
-    <div class="mailBar">
-        <a class="mono" href="mailto:yashwanthtron@gmail.com">yashwanthtron@gmail.com</a>
-    </div>
-    <nav class="navbar navbar-expand-md navbar-dark px-md-5 px-0 fixed-top" id="mainNav">
-                <a href="" class="navbar-brand p-3">
-                    <!-- <div id="logo">Y<p class="ash">ash</p></div> -->
-                    <img src="./images/Logo.png" alt="">
-                </a>
-                <button class="navbar-toggler  mx-3"  data-toggle="collapse" data-target="#navLinks" aria-label="toggle-navbar">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse " id="navLinks">
-                  <ul class="navbar-nav ml-auto h5 mono">
+    <main class="d-none" onload=display()>
+        <div class="sideBar">
+            <ul class="sideLinks">
+                <li><a id="ic" href="https://github.com/yashh-dev"><i class="bi bi-github"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/yashwanthkrishnab/"><i class="bi bi-linkedin"></i></a></li>
+                <!-- <li><a href="https://codepen.io/yash-official"><svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-codepen"><title>CodePen</title><polygon points="12 2 22 8.5 22 15.5 12 22 2 15.5 2 8.5 12 2"></polygon><line x1="12" y1="22" x2="12" y2="15.5"></line><polyline points="22 8.5 12 15.5 2 8.5"></polyline><polyline points="2 15.5 12 8.5 22 15.5"></polyline><line x1="12" y1="2" x2="12" y2="8.5"></line></svg></a></li> -->
+                <li><a href="https://www.instagram.com/noodlecodes/"><i class="bi bi-instagram"></i></a></li>
+                <li><a href="https://twitter.com/noodleCodes"><i class="bi bi-twitter"></i></a></li>
+            </ul>
+        </div>
+        
+        <div class="mailBar">
+            <a class="mono" href="mailto:yashwanthtron@gmail.com">yashwanthtron@gmail.com</a>
+        </div>
+        <nav class="navbar navbar-expand-md navbar-dark px-md-5 px-0 fixed-top" id="mainNav">
+            <a href="" class="navbar-brand p-3">
+                <!-- <div id="logo">Y<p class="ash">ash</p></div> -->
+                <img src="./images/Logo.png" alt="">
+            </a>
+            <button class="navbar-toggler  mx-3" data-toggle="collapse" data-target="#navLinks" aria-label="toggle-navbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navLinks">
+                <ul class="navbar-nav ml-auto h5 mono">
                     <li class="nav-item"><a class="nav-link" id="links" href="#works">My-Work</a> </li>
                     <li class="nav-item"><a class="nav-link" id="links" href="./Resume.pdf">Resume</a> </li>
-                  </ul>
-        </div>
-    </nav>
-    <section class="container main d-flex align-items-center justify-content-center text-light">
-        <div class="d-flex flex-column align-items-center">
-            <div class="row d-flex justify-content-center"> 
-                <div class="col-md-9">
-                    <p class="mb-3 mono display-5">Hi, my name is,</p>
-                    <h1 id="name" class="h1 mb-2">Yashwanth Krishna</h1>
-                    <h1 id="catch" class="h2 mb-4 rale-bold fw-bold pop" >I build things for the <span >World</span>.</h1>
-                    <p class="role text-muted mb-5 rale-bold" style="width:70%">I'm a Software Engineer and Open Source Enthusiast, Currently I'm focused on building Deep Learning Model in the road to become a Data Scientist </p>
-                    <a class="display-5 border rounded text-light px-4 py-2 rale-bold" href="#contact-us">Contact Me</a>
-                   </div>
-                   <div class="d-none d-lg-block col-2">
-                   </div>
-            </div>
-        </div>
-    </section>
-    <section id="aboutMe" class="container text-light pb-5">
+                </ul>
+                </div>
+                </nav>
+                <section class="container main d-flex align-items-center justify-content-center text-light">
+                    <div class="d-flex flex-column align-items-center">
+                        <div class="row d-flex justify-content-center">
+                            <div class="col-md-9">
+                                <p class="mb-3 mono display-5">Hi, my name is,</p>
+                                <h1 id="name" class="h1 mb-2">Yashwanth Krishna</h1>
+                        <h1 id="catch" class="h2 mb-4 rale-bold fw-bold pop">I build things for the <span>World</span>.</h1>
+                        <p class="role text-muted mb-5 rale-bold" style="width:70%">I'm a Software Engineer and Open Source
+                            Enthusiast, Currently I'm focused on building Deep Learning Model in the road to become a Data
+                            Scientist </p>
+                        <a class="display-5 border rounded text-light px-4 py-2 rale-bold" href="#contact-us">Contact Me</a>
+                        </div>
+                        <div class="d-none d-lg-block col-2">
+                        </div>
+                        </div>
+                        </div>
+                        </section>
+                        <section id="aboutMe" class="container text-light pb-5">
         
-        <div class="row d-flex justify-content-center align-items-center">
-            <div class="col-md-7">
-                <h1 class="display-5 mb-4 pop">About Me</h1>
-                <div class="display-6 rale">
-                    <p class="mb-4">
-                        I am currently studying Bachelors in Electronic Communication. I joined the course to gain knowledge around projects I am willing to do in future. I myself a person who believes in science fiction and living to make them real, So i started to look on Engineering and Electronics and Communication was my best choice of interest and a person who says “Nothing is impossible”.
-                    </p>
-                    <p class="mono"><i>Technologies I have Worked with :</i></p>
-            <div class="skills text-muted row align-items-center justify-content-center mono">
-                <div class="col-6">
-                    <ul>
-                        <li>Java</li> 
-                        <li>Python</li>
-                        <li>C</li>
-                        <li>Bash</li>
-                        <li>SQL</li>
-                    </ul>
-                </div>
-                <div class="col-6">
-                    <ul>
-                        <li>NodeJS</li>
-                        <li>Flutter</li>
-                        <li>Jupyter Notebook</li>
-                        <li>FireBase</li>
-                        <li>MongoDB</li>
-                    </ul>
-                </div>
-            </div>
-                </div>
-                
-            </div>
-            <img class="profile-pic col-md-4" src="./images/blob.svg" alt=""> 
-        </div>
-    </section>
-    <picture class="d-flex justify-content-center "  >
-        <source 
-          srcset="https://github-readme-stats.vercel.app/api?username=yashh-dev&show_icons=true&theme=dark"
-          media="(prefers-color-scheme: dark)"
-        />
-        <source
-          srcset="https://github-readme-stats.vercel.app/api?username=yashh-dev&show_icons=true"
-          media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
-        />
-        <img id="gitStatus" style="margin-bottom: 100px;" src="https://github-readme-stats.vercel.app/api?username=yashh-dev&show_icons=true" />
+            <div class="row d-flex justify-content-center align-items-center">
+                <div class="col-md-7">
+                    <h1 class="display-5 mb-4 pop">About Me</h1>
+                    <div class="display-6 rale">
+                        <p class="mb-4">
+                            I am currently studying Bachelors in Electronic Communication. I joined the course to gain knowledge
+                            around projects I am willing to do in future. I myself a person who believes in science fiction and
+                            living to make them real, So i started to look on Engineering and Electronics and Communication was
+                            my best choice of interest and a person who says “Nothing is impossible”.
+                            </p>
+                            <p class="mono"><i>Technologies I have Worked with :</i></p>
+                            <div class="skills text-muted row align-items-center justify-content-center mono">
+                                <div class="col-6">
+                                    <ul>
+                                        <li>Java</li>
+                                        <li>Python</li>
+                                        <li>C</li>
+                                        <li>Bash</li>
+                                        <li>SQL</li>
+                                    </ul>
+                                </div>
+                                <div class="col-6">
+                                    <ul>
+                                        <li>NodeJS</li>
+                                        <li>Flutter</li>
+                                        <li>Jupyter Notebook</li>
+                                        <li>FireBase</li>
+                                        <li>MongoDB</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            </div>
+                            
+                            </div>
+                            <img class="profile-pic col-md-4" src="./images/blob.svg" alt="">
+                            </div>
+                            </section>
+        <picture class="d-flex justify-content-center ">
+            <source srcset="https://github-readme-stats.vercel.app/api?username=yashh-dev&show_icons=true&theme=dark"
+                media="(prefers-color-scheme: dark)" />
+            <source srcset="https://github-readme-stats.vercel.app/api?username=yashh-dev&show_icons=true"
+                media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)" />
+            <img id="gitStatus" style="margin-bottom: 100px;"
+                src="https://github-readme-stats.vercel.app/api?username=yashh-dev&show_icons=true" />
         </picture>
-    <section id="works" class="works container text-light pb-5">
+        <section id="works" class="works container text-light pb-5">
         
-        <div class="row d-flex justify-content-center align-items-center">
-            <div class="col-md-11">
-                <h1 class="display-5 mb-4 pop"> My Works</h1>
-                <div class="container">
-                    <ul class="projects d-flex flex-wrap rale justify-content-center">
-                        <li><div class="card" style="width: 18rem;">
-                            <img src="./images/introis.png" class="card-img-top" alt="..." >
-                            <div class="card-body">
-                              <h5 class="card-title">Introis Technologies</h5>
-                              <p class="card-text">A Static Site for Professional Software Solution Company with Modern Design</p>
-                              <a href="https://introis.com/" class="display-5 border rounded text-light px-4 py-2 rale-bold">More</a>
-                            </div>
-                          </div></li>
-                          <li><div class="card" style="width: 18rem;">
-                            <img src="/images/camper.png" class="card-img-top" alt="..." >
-                            <div class="card-body">
-                              <h5 class="card-title">Camper</h5>
-                              <p class="card-text">A web App for Camp Sites with CRUD operation and Map integration more.</p>
-                              <a href="https://github.com/yashh-dev/Camper" class="display-5 border rounded text-light px-4 py-2 rale-boldy">More</a>
-                            </div>
-                          </div></li>
-                        <li><div class="card" style="width: 18rem;">
-                            <img src="images/chennaindt.png" class="card-img-top" alt="..." >
-                            <div class="card-body">
-                              <h5 class="card-title">Chennai NDT</h5>
-                              <p class="card-text">A Static Site for Professional NDT Equipments Supply and Manufacturing Company</p>
-                              <a href="https://chennaindt.in/" class="display-5 border rounded text-light px-4 py-2 rale-bold ">More</a>
-                            </div>
-                          </div></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <div id="contact-us" class="container col-md-6 border text-light p-md-5 m-5 mx-auto">
-        <h1 class="pop text-light mb-5 ">Contact Me</h1>
-        <form action="https://formsubmit.co/yashwanthtron@gmail.com" method="POST">
+            <div class="row d-flex justify-content-center align-items-center">
+                <div class="col-md-11">
+                    <h1 class="display-5 mb-4 pop"> My Works</h1>
+                    <div class="container">
+                        <ul class="projects d-flex flex-wrap rale justify-content-center">
+                            <li>
+                                <div class="card" style="width: 18rem;">
+                                    <img src="./images/introis.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Introis Technologies</h5>
+                                        <p class="card-text">A Static Site for Professional Software Solution Company with
+                                            Modern Design</p>
+                                        <a href="https://introis.com/" class="display-5 border rounded text-light px-4 py-2 rale-bold">More</a>
+                                        </div>
+                                </div>
+                                </li>
+                                <li>
+                                    <div class="card" style="width: 18rem;">
+                                        <img src="/images/camper.png" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Camper</h5>
+                                        <p class="card-text">A web App for Camp Sites with CRUD operation and Map integration
+                                            more.</p>
+                                        <a href="https://github.com/yashh-dev/Camper" class="display-5 border rounded text-light px-4 py-2 rale-boldy">More</a>
+                                        </div>
+                                </div>
+                                </li>
+                                <li>
+                                    <div class="card" style="width: 18rem;">
+                                        <img src="images/chennaindt.png" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Chennai NDT</h5>
+                                        <p class="card-text">A Static Site for Professional NDT Equipments Supply and
+                                            Manufacturing Company</p>
+                                        <a href="https://chennaindt.in/" class="display-5 border rounded text-light px-4 py-2 rale-bold ">More</a>
+                                        </div>
+                                </div>
+                                </li>
+                                </ul>
+                                </div>
+                                </div>
+                                </div>
+                                </section>
+                                
+                                <div id="contact-us" class="container col-md-6 border text-light p-md-5 m-5 mx-auto">
+                                    <h1 class="pop text-light mb-5 ">Contact Me</h1>
+                                    <form action="https://formsubmit.co/yashwanthtron@gmail.com" method="POST">
                 <div class="row mb-3">
                     <div class="col-md-6 mb-3">
-                      <input type="text" name="name" class="form-control" placeholder="name" aria-label="name">
+                        <input type="text" name="name" class="form-control" placeholder="name" aria-label="name">
                     </div>
                     <div class="col-md-6 mb-3">
-                      <input type="email" name="email" class="form-control" placeholder="email" aria-label="email">
+                        <input type="email" name="email" class="form-control" placeholder="email" aria-label="email">
                     </div>
-                  </div>
-              <div class="mb-5">
-                <textarea name="message" class="form-control" id="message" rows="3" placeholder="Type your Message Here."></textarea>
-              </div>
-              <button type="submit" class="mb-3 bttn display-5 border rounded text-light px-4 py-2 rale-bold">Send</button>
-              <input type="hidden" name="_next" value="https://yashh-dev.netlify.app/thanks.html">
-              <input type="hidden" name="_captcha" value="false">
-        </form>
-    </div>
-    <footer class="d-flex flex-column justify-content-center align-items-center d-md-none">
-        <ul class="footer-links">
-            <li><a id="ic" href="https://github.com/yashh-dev"><i class="bi bi-github"></i></a></li>
-            <li><a href="https://www.linkedin.com/in/yashwanthkrishnab/"><i class="bi bi-linkedin"></i></a></li>
-            <!-- <li><a href="https://codepen.io/yash-official"><svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-codepen"><title>CodePen</title><polygon points="12 2 22 8.5 22 15.5 12 22 2 15.5 2 8.5 12 2"></polygon><line x1="12" y1="22" x2="12" y2="15.5"></line><polyline points="22 8.5 12 15.5 2 8.5"></polyline><polyline points="2 15.5 12 8.5 22 15.5"></polyline><line x1="12" y1="2" x2="12" y2="8.5"></line></svg></a></li> -->
-            <li><a href="https://www.instagram.com/noodlecodes/"><i class="bi bi-instagram"></i></a></li>
-            <li><a href="https://twitter.com/noodleCodes"><i class="bi bi-twitter"></i></a></li>
-        </ul>    
-        <p class="text-light">Built by Yashwanth Krishna &copy; 2022</p>
-    </footer>
+                </div>
+                <div class="mb-5">
+                    <textarea name="message" class="form-control" id="message" rows="3"
+                        placeholder="Type your Message Here."></textarea>
+                </div>
+                <button type="submit" class="mb-3 bttn display-5 border rounded text-light px-4 py-2 rale-bold">Send</button>
+                <input type="hidden" name="_next" value="https://yashh-dev.netlify.app/thanks.html">
+                <input type="hidden" name="_captcha" value="false">
+                </form>
+                </div>
+                <footer class="d-flex flex-column justify-content-center align-items-center d-md-none">
+                    <ul class="footer-links">
+                        <li><a id="ic" href="https://github.com/yashh-dev"><i class="bi bi-github"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/yashwanthkrishnab/"><i class="bi bi-linkedin"></i></a></li>
+                        <!-- <li><a href="https://codepen.io/yash-official"><svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-codepen"><title>CodePen</title><polygon points="12 2 22 8.5 22 15.5 12 22 2 15.5 2 8.5 12 2"></polygon><line x1="12" y1="22" x2="12" y2="15.5"></line><polyline points="22 8.5 12 15.5 2 8.5"></polyline><polyline points="2 15.5 12 8.5 22 15.5"></polyline><line x1="12" y1="2" x2="12" y2="8.5"></line></svg></a></li> -->
+                        <li><a href="https://www.instagram.com/noodlecodes/"><i class="bi bi-instagram"></i></a></li>
+                        <li><a href="https://twitter.com/noodleCodes"><i class="bi bi-twitter"></i></a></li>
+                    </ul>
+                    <p class="text-light">Built by Yashwanth Krishna &copy; 2022</p>
+                </footer>
+    </main>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    <script src="./index.js"></script>
+    <script type="text/javascript">
+        setTimeout(function () {
+            const main = document.querySelector("main");
+            console.log(main);
+            main.classList.remove("d-none");
+            main.style.opacity = '1';
+            document.querySelector(".progress-loader").classList.add('d-none');
+        }, 2000);
+    </script>
 </body>
 </html>
